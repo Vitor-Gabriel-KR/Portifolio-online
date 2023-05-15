@@ -1,0 +1,60 @@
+
+.caixa {
+    height: 40vh;
+    width: 29.3%; 
+    border: 2px solid rgb(0, 110, 255);
+    float: left;
+    margin-left: 23px; /* aumentado de 20px para 30px */
+    overflow: hidden;
+    transition: height 0.5s ease-in-out, border-width 0.5s ease-in-out;
+  }
+  
+  .cabecalho {
+    background-color: rgb(0, 110, 255);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .cabecalho h2 {
+    margin: 0;
+  }
+  
+  .seta {
+    background-image: url('seta.png'); /* substitua pelo caminho da sua imagem de seta */
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 20px;
+    width: 20px;
+    transform: rotate(0deg);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .mensagem {
+    height: 100%;
+    overflow: hidden;
+    padding: 10px;
+  }
+  
+  .expandido {
+    height: 50vh;
+    border: 2px solid rgb(0, 110, 255);
+  }
+  
+  .expandido .seta {
+    transform: rotate(180deg);
+  }
+  .caixa.expandido {
+   height: 55vh;  /*animação da caixa tamanho */
+    border: 2px solid rgb(0, 110, 255);
+  }
+  .linha {
+    height: 1vh;
+    width: 100%;
+    border: 2px;
+    float: right;
+    margin-left: 20px; 
+  }
